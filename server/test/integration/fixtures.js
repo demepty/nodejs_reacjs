@@ -3,17 +3,18 @@ const Thread = require ('../../src/models/Thread');
 const seedThreads = async () =>{
  return await Thread.create([
  {
-  title:'foo',
+  title:'El sistema de matrícula esta dañado',
   body:'bar',
   slug: '',
  },
 {
-  title:'foo',
+  title:'El problema de transporte en Panamá',
   body:'var',
   slug: '',
 },
  ]);
 };
+
 
 module.exports={
 seedThreads,

@@ -8,7 +8,9 @@ const threadsRouter = require('./routes/threads');
 const mongoose = require('./mongoose');
 var app = express();
 
-
+if (process.env.NODE_ENV != 'test') {
+  app.use(logger('dev'));
+}
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
