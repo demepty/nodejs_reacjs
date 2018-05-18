@@ -1,7 +1,7 @@
 const initialState = {
   threads:[],
-  idLoading:false,
-  erroMessage:null,
+  isLoading:false,
+  errorMessage:null,
 };
 
 export default (state = initialState, action) => {
